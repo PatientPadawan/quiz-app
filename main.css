@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+.quizForm {
+    border: solid 2 px red;
+    display: none;
+}
+
+.quizStart {
+    border: solid 2px green;
+}
