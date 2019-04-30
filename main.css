@@ -2,11 +2,24 @@
     box-sizing: border-box;
 }
 
+html {
+    background: url(appetizer-dark-delicious-326279.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .quizForm {
     border: solid 2 px red;
     display: none;
+    font-size: 24px;
 }
 
 .quizStart {
     border: solid 2px green;
 }
+
+.score {
+    border: dashed 2px blue;
+}
+
