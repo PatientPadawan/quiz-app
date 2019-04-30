@@ -20,7 +20,7 @@ const STORE = [
         correctAnswer: '1/2 C chili peppers'
     },
     {
-        question: 'Which macronutrient is considered the preferred energy source of brain tissue?',
+        question: 'Which macronutrient is the preferred energy source of brain tissue?',
         answers: [
         'Protein',
         'Lipids',
@@ -30,7 +30,7 @@ const STORE = [
         correctAnswer: 'Carbohydrates'
     },
     {
-        question: 'Which word belows corresponds to this definition: the energy needed to raise the temperature of 1 gram of water through 1 °C?',
+        question: 'Which word fits this definition: the energy needed to raise the temperature of 1 gram of water through 1 °C?',
         answers: [
         'Calorie',
         'Creation of fatty tissues',
@@ -44,10 +44,10 @@ const STORE = [
         answers: [
         'Synthesis of serum cholesterol',
         'Trans fat',
-        'Integral part of sex hormone production',
-        'A substrate for glycolysis'
+        'Sex hormone production',
+        'Substrate for glycolysis'
         ],
-        correctAnswer: 'Integral part of sex hormone production'
+        correctAnswer: 'Sex hormone production'
     },     
     {
         question: 'When the concept of vitamins first arose they were believed to be:',
@@ -62,12 +62,12 @@ const STORE = [
     {
         question: 'The integral difference between unsaturated and saturated fats is:',
         answers: [
-        'The number of carbons in the chain',
-        'The presence of a carbon-carbon double bond',
-        'The carboxyl group',
-        'One is hydrophilic the other hydrophobic'
+        '# of carbons in the chain',
+        'A carbon-carbon double bond',
+        'Carboxyl group',
+        'Hydrophilicity'
         ],
-        correctAnswer: 'The presence of a carbon-carbon double bond'
+        correctAnswer: 'A carbon-carbon double bond'
     },
     {
         question: 'Which macronutrient below is involved with antibody production?',

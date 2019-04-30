@@ -31,28 +31,21 @@ function generateQuestionForm () {
         </form>
         </div>`;       
     } else {
-        renderResults ();
-        console.log('results in else ran');  
+        renderResults (); 
         quizRestart ();
         $('.questionNumber').text(10)
     }
-
-    console.log('generateQuestionForm ran');    
 }
 
 // increment question number
 function incrementQuestionNumber () {
     questionNumber ++;
     $('.questionNumber').text(questionNumber+1);
-    
-    console.log('incrementQuestionNumber ran');  
-}
+    }
 
 // increment score
 function incrementScore () {
     score ++;
-
-    console.log('incrementScore ran');  
 }
 
 // start quiz
@@ -61,16 +54,12 @@ function startQuiz () {
         $('.quizStart').remove();
         $('.quizForm').css('display', 'block');
         $('.questionNumber').text(1);
-
-        console.log('startQuiz ran');  
 });
 }
 
 // render question
 function renderQuestion () {
     $('.quizForm').html(generateQuestionForm());
-
-    console.log('renderQuestion ran');  
 }
 
 // user submit / feedback
@@ -86,30 +75,22 @@ function userSubmit () {
             userAnswerIncorrect();
         }
     });
-
-    console.log('userSubmit ran');
 }
 
 // display correct feedback update and score
 function userAnswerCorrect () {
     userCorrectFeedback();
     updateScore();
-
-    console.log('userCorrectAnswer ran');
 }
 
 // display incorrect feedback
 function userAnswerIncorrect () {
     userIncorrectFeedback ();
-
-    console.log('userIncorrectAnswer ran');
 }
 
 // user feedback correct
 function userCorrectFeedback () {
     $('.quizForm').html(`<div><p><b>Correct!</b></p><button type=button class="nextButton">Next</button></div>`);
-
-    console.log('userCorrectFeedback ran');
 }
 
 
@@ -117,16 +98,12 @@ function userCorrectFeedback () {
 function userIncorrectFeedback () {
     let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
     $('.quizForm').html(`<div><p>Incorrect, the right answer is <span>${correctAnswer}</span></p><button type=button class="nextButton">Next</button></div>`);
-
-    console.log('userIncorrectFeedback ran');
 }
 
 // update score / score text
 function updateScore () {
     incrementScore ();
-    $('.score').text(score);
-
-    console.log('updateScore ran');
+    $('.js-score').text(score);
 }
 
 // next button
@@ -136,8 +113,6 @@ function renderNext () {
         renderQuestion ();
         userSubmit ();
     });
-
-    console.log('renderNext ran');
 }
 
 // quiz over page
@@ -147,7 +122,6 @@ function renderResults () {
     } else {
         $('.quizForm').html(`<div><h3>Oh no!</h3><p><You scored ${score} / 10</p><p>Anything below a 7 fails. Keep trying!</p><button class="restartButton">Restart Quiz</button></div>`);
     }
-    console.log('renderResults ran');
 }
 
 // quiz restart by reload
@@ -155,7 +129,6 @@ function quizRestart () {
     $('main').on('click', '.restartButton', function (e) {
         location.reload();
     });
-    console.log('quiz restart ran');
 }
 
 // quiz function handler

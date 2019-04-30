@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 html {
@@ -8,18 +10,71 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: 'Merriweather', serif;
+    color: #C8F7C5;
+    height: 100%;
 }
+
+fieldset {
+    border: none;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+.flexContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
 .quizForm {
-    border: solid 2 px red;
     display: none;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    background-color: #C8F7C5;
     font-size: 24px;
+    color: #1E8BC3;
+    border: 2px solid #1E8BC3;
+    border-radius: 360px;
 }
 
 .quizStart {
-    border: solid 2px green;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    background-color: #C8F7C5;
+    font-size: 24px;
+    color: #1E8BC3;
+    border: 2px solid #1E8BC3;
+    border-radius: 360px;
 }
 
-.score {
-    border: dashed 2px blue;
+button {
+    border: none;
+    background-color: #1E8BC3;
+    padding: 5px;
+    border-radius: 360px;
+    color: #C8F7C5;
+    width: 80%;
+    cursor: pointer;
 }
 
+button:hover, button:focus {
+    background-color: #67809f;
+    color: #00FF7F;
+}
+
+header ul li {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
