@@ -101,7 +101,7 @@ function userCorrectFeedback () {
 // user feedback incorrect
 function userIncorrectFeedback () {
     let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
-    $('.quizForm').html(`<div><h3>Incorrect, the right answer is <span><u>${correctAnswer}</u></span></h3><button type=button class="nextButton">Next</button></div>`);
+    $('.quizForm').html(`<div><h3>Incorrect, the right answer is <span class="correctAnswer"><u>${correctAnswer}</u></span>.</h3><button type=button class="nextButton">Next</button></div>`);
 }
 
 // update score / score text

@@ -125,7 +125,11 @@ img {
     border: 3px solid #708080;
     display: none;
     margin-top: 5em;
-    width: 80%;
+    width: 275px;
+}
+
+.correctAnswer {
+    text-transform: lowercase;
 }
 
 @media screen and (min-width: 768px) {
@@ -142,7 +146,7 @@ img {
 
     h3 {
         font-weight: 200;
-        padding-top: 10px;
+        font-size: 20px;
     }
 
     label.answerOption {
@@ -157,7 +161,7 @@ img {
     }
 
     .question-score-container {
-        width: 275px;
+        width: 50%;
         margin: 35px auto 0 auto;
     }
 
@@ -166,12 +170,12 @@ img {
     }
   
     .quizStart {
-        width: 500px;
+        width: 50%;
         font-size: 18px;
     }
     
     .quizForm {
-        width: 75%;
+        width: 50%;
         font-size: 18px;
         font-weight: 200;
     }
@@ -179,42 +183,14 @@ img {
 
 @media screen and (min-width: 1024px) {
     h2 {
-        font-weight: 200;
-        padding-top: 10px;
         font-size: 24px;
     }
 
-    h3 {
-        font-weight: 200;
-        padding-top: 10px;
-    }
-
-    .labelContainer {
-        display: inline;
-    }
-    
-    img {
-        width: 50%;
-        margin-top: 5em;
-    }
-
-    .question-score-container {
-        width: 350px;
-        margin: 35px auto 0 auto;
-    }
-
-    .answerOption {
-        padding: 7px;
-    }
-  
     .quizStart {
-        width: 850px;
         font-size: 20px;
     }
     
     .quizForm {
-        width: 1000px;
         font-size: 20px;
-        font-weight: 200;
     }
 }
