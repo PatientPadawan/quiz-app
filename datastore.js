@@ -30,10 +30,10 @@ const STORE = [
         correctAnswer: 'Carbohydrates'
     },
     {
-        question: 'Which word fits this definition: the energy needed to raise the temperature of 1 gram of water through 1 °C?',
+        question: 'The energy needed to raise the temperature of 1 gram of water through 1 °C:',
         answers: [
         'Calorie',
-        'Creation of fatty tissues',
+        'Electrolyte',
         'Cholesterol',
         'Hydrolysis'
         ],
@@ -90,7 +90,7 @@ const STORE = [
         correctAnswer: '9'
     },
     {
-        question: 'Which macronutrient below assists in the transport and solubility of Vitamin E?',
+        question: 'Which macronutrient assists in the transport and solubility of Vitamin E?',
         answers: [
         'Protein',
         'Lipids',

@@ -81,16 +81,18 @@ function userSubmit () {
 function userAnswerCorrect () {
     userCorrectFeedback();
     updateScore();
+    $('.js-CorrectHidden').css('display', 'flex');
 }
 
 // display incorrect feedback
 function userAnswerIncorrect () {
     userIncorrectFeedback ();
+    $('.js-IncorrectHidden').css('display', 'flex');
 }
 
 // user feedback correct
 function userCorrectFeedback () {
-    $('.quizForm').html(`<div><p><b>Correct!</b></p><button type=button class="nextButton">Next</button></div>`);
+    $('.quizForm').html(`<div><p><h3>Correct!</h3></p><button type=button class="nextButton">Next</button></div>`);
 }
 
 
@@ -112,6 +114,8 @@ function renderNext () {
         incrementQuestionNumber ();
         renderQuestion ();
         userSubmit ();
+        $('.js-CorrectHidden').css('display', 'none');
+        $('.js-IncorrectHidden').css('display', 'none');
     });
 }
 
