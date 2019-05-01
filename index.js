@@ -6,7 +6,7 @@ let score = 0;
 // generate question form
 function generateQuestionForm () {
     if (questionNumber < STORE.length) {
-        return `<div class="question-${questionNumber}">
+        return `<div>
         <h2>${STORE[questionNumber].question}</h2>
         <form>
         <fieldset>
@@ -99,7 +99,7 @@ function userCorrectFeedback () {
 // user feedback incorrect
 function userIncorrectFeedback () {
     let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
-    $('.quizForm').html(`<div><p>Incorrect, the right answer is <span>${correctAnswer}</span></p><button type=button class="nextButton">Next</button></div>`);
+    $('.quizForm').html(`<div><h3>Incorrect, the right answer is <span><u>${correctAnswer}</u></span></h3><button type=button class="nextButton">Next</button></div>`);
 }
 
 // update score / score text
