@@ -11,7 +11,7 @@ function generateQuestionForm () {
         <form>
         <fieldset>
         <label class="answerOption">
-        <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required>
+        <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required checked>
         <span>${STORE[questionNumber].answers[0]}</span>
         </label>
         <label class="answerOption">
@@ -124,10 +124,15 @@ function renderResults () {
     }
 }
 
-// quiz restart by reload
+// quiz restart
 function quizRestart () {
     $('main').on('click', '.restartButton', function (e) {
-        location.reload();
+        questionNumber = 0;
+        $('.questionNumber').text(questionNumber+1);
+        score = 0;
+        $('.js-score').text(score);
+        renderQuestion ();
+        userSubmit ();
     });
 }
 
