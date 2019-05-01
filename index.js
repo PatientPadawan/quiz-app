@@ -10,6 +10,7 @@ function generateQuestionForm () {
         <h2>${STORE[questionNumber].question}</h2>
         <form>
         <fieldset>
+        <div class="labelContainer">
         <label class="answerOption">
         <input type="radio" value="${STORE[questionNumber].answers[0]}" name="answer" required checked>
         <span>${STORE[questionNumber].answers[0]}</span>
@@ -26,6 +27,7 @@ function generateQuestionForm () {
         <input type="radio" value="${STORE[questionNumber].answers[3]}" name="answer" required>
         <span>${STORE[questionNumber].answers[3]}</span>
         </label>
+        </div>
         <button type="submit" class="submitButton">Submit</button>
         </fieldset>
         </form>
