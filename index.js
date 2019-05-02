@@ -7,8 +7,8 @@ let score = 0;
 function generateQuestionForm () {
     if (questionNumber < STORE.length) {
         return `<div>
-        <h2>${STORE[questionNumber].question}</h2>
         <form>
+        <legend>${STORE[questionNumber].question}</legend>
         <fieldset>
         <div class="labelContainer">
         <label class="answerOption">
